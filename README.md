@@ -5,5 +5,7 @@ Python 3.10 이상에서 동작한다.
 
 ## API
 - `GET /` : 인사 메시지
+## 실행 방법
+`uvicorn app.main:app --reload`
 
 ## 팀원
