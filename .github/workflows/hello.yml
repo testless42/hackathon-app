@@ -1,0 +1,21 @@
+name: Hello
+
+on:
+  workflow_dispatch:      # Actions 탭의 버튼으로 실행
+  push:
+    branches: [main]      # main 에 push 하면 실행
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 인사하기
+        run: echo "hello hackathon"
+
+      - name: 실행 환경 보기
+        run: |
+          echo "저장소: ${{ github.repository }}"
+          echo "이벤트: ${{ github.event_name }}"
+          echo "실행한 사람: ${{ github.actor }}"
+          uname -a
+          python3 --version
