@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 인사하기
-        run: echo "hello hackathon"
+        run: echo "hello from my laptop"
 
       - name: 실행 환경 보기
         run: |
